@@ -1,5 +1,14 @@
 # Memoteca
 
+###SETUP
+
+npm install -g @angular/cli@14.0.0
+
+ng new memoteca
+
+https://github.com/alura-cursos/2438-angular-memoteca/tree/aula-6/src
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
 
 ## Development server
