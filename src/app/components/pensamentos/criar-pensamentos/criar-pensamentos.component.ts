@@ -5,8 +5,16 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './criar-pensamentos.component.html',
-  styleUrl: './criar-pensamentos.component.css'
+  styleUrls: ['./criar-pensamentos.component.css']
 })
-export class CriarPensamentosComponent {
+
+export class CriarPensamentosComponent  {
+
+  pensamento = {
+    id: '1',
+    conteudo: 'Aprendendo Angular',
+    autoria: 'Dev',
+    modelo: ''
+  }
 
 }
