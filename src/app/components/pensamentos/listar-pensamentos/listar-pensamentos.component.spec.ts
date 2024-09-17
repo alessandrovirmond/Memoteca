@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ListarPensamentosComponent } from './listar-pensamentos.component';
+import { NgFor } from '@angular/common';
+import { PensamentoService } from '../pensamento.service';
+import { ExcluirPensamentoComponent } from '../excluir-pensamento/excluir-pensamento.component';
 
 describe('ListarPensamentosComponent', () => {
   let component: ListarPensamentosComponent;
@@ -8,7 +11,7 @@ describe('ListarPensamentosComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ListarPensamentosComponent]
+      imports: [ListarPensamentosComponent, NgFor, PensamentoService, ExcluirPensamentoComponent]
     })
     .compileComponents();
 

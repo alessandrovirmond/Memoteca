@@ -4,7 +4,13 @@
 
 npm install -g @angular/cli@14.0.0
 
-ng new memoteca
+ng serve - Roda a aplicação
+
+npm start - Roda o Banco de Dados JSON
+
+ng new memoteca (criar o projeto)
+npm i json-server (criar banco)
+
 
 https://github.com/alura-cursos/2438-angular-memoteca/tree/aula-6/src
 
