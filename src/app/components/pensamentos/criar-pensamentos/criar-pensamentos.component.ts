@@ -18,7 +18,7 @@ export class CriarPensamentosComponent  {
   pensamento: Pensamento = {
     conteudo: '',
     autoria: '',
-    modelo: ''
+    modelo: 'modelo1'
   }
 
   constructor(private service: PensamentoService, private router: Router){ }
@@ -26,12 +26,12 @@ export class CriarPensamentosComponent  {
 
   criarPensamento(){
     this.service.criar(this.pensamento).subscribe(() => {
-      this.router.navigate(['/listarPensamento'])
+      this.router.navigate(['/listarPensamentos'])
     })
   }
 
   cancelar(){
-    this.router.navigate(['/listarPensamento'])
+    this.router.navigate(['/listarPensamentos'])
   }
 
 }
